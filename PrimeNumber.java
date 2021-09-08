@@ -4,19 +4,24 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 		
-int n=1850;
-int i=2;
-if(n%i!=0) {
-		i++;
-		System.out.println("its is an prime number" +i );
+int n=151,r=0;
+if(n==1) {
+	System.out.println("Neither Prime nor composite");
 }
-	else if(n==0) {
-		System.out.println("It is 0");
+int count=0;
+if(n>1) {
+	for(int i=2;i<=n;i++)
+	{
+	if(n%i==0) {
+		count++;
 	}
-	else {
-		System.out.println("not prime number");
 	}
-	
-
+	if(count>2)
+	{
+		System.out.println("Not Prime number");
+	}
+	else
+		System.out.println("Prime Number");
+}
 }
 }
