@@ -3,8 +3,8 @@ package week2.day1;
 public class AnagaramStrings {
 
 	public static void main(String[] args) {
-		String str1 = "EVIL";
-		String str2 = "VILE";
+		String str1 = "DORMITORY";
+		String str2 = "DIRTYROOM";
 		String str3 = "";
 		char[] p = str1.toCharArray();
 		char[] q = str2.toCharArray();
