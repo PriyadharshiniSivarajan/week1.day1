@@ -16,7 +16,7 @@ public class RadioButtons {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://leafground.com/pages/radio.html");
 		driver.findElement(By.xpath("//label[@for='yes']")).click();
-		boolean enabled = driver.findElement(By.xpath("//label[@for='Checked']")).isEnabled();
+		boolean enabled = driver.findElement(By.xpath("(//input[@type='radio'])[4]")).isSelected();
 		if(enabled==true)
 		{ 
 			System.out.println("Default is checked");
