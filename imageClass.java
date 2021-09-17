@@ -16,6 +16,7 @@ public class imageClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://leafground.com/pages/Image.html");
 		driver.findElement(By.xpath("//img[@src='../images/home.png']")).click();
+		
 		driver.get("http://leafground.com/pages/Image.html");
 		driver.findElement(By.xpath("//img[@src='../images/keyboard.png']")).click();
 	}
